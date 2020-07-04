@@ -16,7 +16,7 @@ service i2pd restart
 #
 wget -P /usr/lib/prosody/modules https://raw.githubusercontent.com/majestrate/mod_darknet/master/mod_darknet.lua
 #адресса и2р сервера
-sudo grep "New private keys file" /var/log/i2pd/i2pd.log | sudo grep -Eo "([a-z0-9]+).b32.i2p" | tail -n1 | sudo cat >> ../server.b32.i2p
+sudo grep "New private keys file" /var/log/i2pd/i2pd.log | sudo grep -Eo "([a-z0-9]+).b32.i2p" | tail -n1 | sudo cat >> /tmp/mxppi2p/server.b32.i2p.txt
 cd /home
 sudo sh /tmp/mxppi2p/rename.sh
 #Теперь редактируем конфиг /etc/prosody/prosody.cfg.lua.
