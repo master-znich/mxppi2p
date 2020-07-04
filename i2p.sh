@@ -8,10 +8,10 @@ sudo apt-get update
 echo install i2p
 sudo apt-get install i2pd -y
 #i2p tunel config додаемо налаштування тунелю в
-sudo bash -c "cat /tmp/mxppi2p/i2p_conig.conf >> /var/lib/i2pd/tunnels.conf "
+sudo bash -c "cat /tmp/mxppi2p/i2p_conig.conf >> /var/lib/i2pd/tunnels.conf"
 service i2pd restart
 #
-sudo "wget -P /usr/lib/prosody/modules https://raw.githubusercontent.com/majestrate/mod_darknet/master/mod_darknet.lua'
+sudo "wget -P /usr/lib/prosody/modules https://raw.githubusercontent.com/majestrate/mod_darknet/master/mod_darknet.lua"
 #адресса и2р сервера
 sudo "grep "New private keys file" /var/log/i2pd/i2pd.log | sudo grep -Eo "([a-z0-9]+).b32.i2p" | tail -n1 | sudo cat >> /tmp/mxppi2p/server.b32.i2p.txt"
 sudo sh /tmp/mxppi2p/rename.sh
