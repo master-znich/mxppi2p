@@ -1,0 +1,13 @@
+[prosody-s2s]
+type=server
+host=127.0.0.1
+port=5269
+inport=5269
+keys=prosody.dat
+
+[prosody-c2s]
+type=server
+host=127.0.0.1
+port=5222
+inport=5222
+keys=prosody.dat
