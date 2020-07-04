@@ -8,7 +8,7 @@ sudo apt-get update
 echo install i2p
 sudo apt-get install i2pd -y
 #i2p tunel config додаемо налаштування тунелю в
-sudo bash -c "cat /tmp/mxppi2p/i2p_conig.conf >> /var/lib/i2pd/tunnels.conf "
+sudo bash -c "cat /tmp/mxppi2p/i2p.conf >> /var/lib/i2pd/tunnels.conf "
 sudo service i2pd restart
 sudo "wget -P /usr/lib/prosody/modules https://raw.githubusercontent.com/majestrate/mod_darknet/master/mod_darknet.lua"
 #адресса и2р сервера
