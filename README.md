@@ -1,5 +1,5 @@
-# mxppi2p  
+#mxppi2p  
 #знаю  що помилок багато як у коді так і, граматичних
 #Це мій перший скрипт,буду радий прийняти настанови та критику.
-# git clone in /tmp
+#git clone in /tmp
 #install /tmp/mxppi2p/i2p.sh
