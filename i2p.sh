@@ -20,7 +20,7 @@ sudo grep "New private keys file" /var/log/i2pd/i2pd.log | sudo grep -Eo "([a-z0
 sudo sh /tmp/mxppi2p/rename.sh
 #тут дописуємо строки кофігурації prosody із шаблону.
 #...there are lines of co-figured prosody from the pattern.
-sudo "cat /tmp/mxppi2p/prosody.cfg.lua > /etc/prosody/prosody.cfg.lua"
+sudo "tee -a /tmp/mxppi2p/prosody.cfg.lua > /etc/prosody/prosody.cfg.lua"
 #запуск скрипта установки сертифікатів.
 #Start the certification installation script.
 #замінна xxx.b32.i2p на домен нашого сервера
