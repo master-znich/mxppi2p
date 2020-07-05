@@ -25,7 +25,7 @@ sudo sh /tmp/mxppi2p/rename.sh
 #тут дописуємо строки кофігурації prosody із шаблону.
 #здесь допишем строки конфигурации из шаблона
 #...there are lines of co-figured prosody from the pattern.
-sudo "tee -a /tmp/mxppi2p/prosody.cfg.lua > /etc/prosody/prosody.cfg.lua"
+tee -a /tmp/mxppi2p/prosody.cfg.lua > /etc/prosody/prosody.cfg.lua
 #запуск скрипта установки сертифікатів.
 #запуск скрипта установки сертификатов.
 #Start the certification installation script.
