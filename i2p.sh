@@ -1,5 +1,5 @@
 #!bin/bash
-export PATH=$PATH:/sbin
+
 #установка репозиторіїв i2pd
 #установка репозиториев
 #i2pd repository installation
