@@ -13,7 +13,7 @@ sudo apt-get install apt-transport-https lua-bit32 prosody i2p -y
 #i2p tunel config is giving the tunel a...
 sudo bash -c "cat /tmp/mxppi2p/i2p.conf > /var/lib/i2pd/tunnels.conf "
 sudo service i2pd restart
-sudo "wget -P /usr/lib/prosody/modules https://raw.githubusercontent.com/majestrate/mod_darknet/master/mod_darknet.lua"
+wget -P /usr/lib/prosody/modules https://raw.githubusercontent.com/majestrate/mod_darknet/master/mod_darknet.lua
 #тут знаходить та зберігає адресу нашого сервера,та зберігаємо в файл.
 #здесь  исчет та сохранняет адрсе нашёго сервера та сохраняет в файл
 # they know and save our address, and save it in a file.
