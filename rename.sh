@@ -1,6 +1,6 @@
 #!bin/bash
 #замінна xxx.b32.i2p на домен нашого сервера
-read /home/test/server.b32.i2p <data-file
+read /home/test/server.b32.i2p.txt <data-file
 sudo echo "server.b32.i2p = $ser"
 sudo sed s/xxx.b32.i2p/$ser/g  cat >> /etc/prosody/prosody.cfg.lua
 #sleep
