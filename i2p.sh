@@ -21,7 +21,6 @@ sudo grep "New private keys file" /var/log/i2pd/i2pd.log | sudo grep -Eo "([a-z0
 #запускаємо скрипт який замінить xxx.b32.i2p на  адресу з файлах конфігурації. 
 #запускаим скрипт который заменит на адрес в из файла конфигурации
 #Runs a script that says xxx.b32.i2p at the address of the configuration files.
-sudo bash /tmp/mxppi2p/rename.sh
 #тут дописуємо строки кофігурації prosody із шаблону.
 #здесь допишем строки конфигурации из шаблона
 #...there are lines of co-figured prosody from the pattern.
