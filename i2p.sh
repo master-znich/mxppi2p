@@ -30,8 +30,8 @@ tee -a /tmp/mxppi2p/prosody.cfg.lua > /etc/prosody/prosody.cfg.lua
 #запуск скрипта установки сертификатов.
 #Start the certification installation script.
 #замінна xxx.b32.i2p на домен нашого сервера
-read /tmp/mxppi2p/server.b32.i2p.txt << data-file
-sudo echo "server.b32.i2p.txt = $ser"
+read /tmp/mxppi2p/server.b32.i2p.txt << data-file &&
+&& sudo echo "server.b32.i2p.txt = $ser" &&
 sudo sed s/xxx.b32.i2p/$ser/g  cat >> /etc/prosody/prosody.cfg.lua | sudo sed s/xxx.b32.i2p/$ser/g  cat >> /home/test/certs.b32.i2p.sh
 sudo bash /home/test/certs.b32.i2p.sh | sudo bash /tmp/mxppi2p/certs.b32.i2p.sh
 service prosody restart
