@@ -17,7 +17,7 @@ wget -P /usr/lib/prosody/modules https://raw.githubusercontent.com/majestrate/mo
 #тут знаходить та зберігає адресу нашого сервера,та зберігаємо в файл.
 #здесь  исчет та сохранняет адрсе нашёго сервера та сохраняет в файл
 # they know and save our address, and save it in a file.
-sudo grep "New private keys file" /var/log/i2pd/i2pd.log | sudo grep -Eo "([a-z0-9]+).b32.i2p" | tail -n1 | sudo "cat > /tmp/mxppi2p/server.b32.i2p.txt"
+sudo grep "New private keys file" /var/log/i2pd/i2pd.log | sudo grep -Eo "([a-z0-9]+).b32.i2p" | tail -n1 | sudo tee -a  > /tmp/mxppi2p/server.b32.i2p.txt
 #запускаємо скрипт який замінить xxx.b32.i2p на  адресу з файлах конфігурації. 
 #запускаим скрипт который заменит на адрес в из файла конфигурации
 #Runs a script that says xxx.b32.i2p at the address of the configuration files.
