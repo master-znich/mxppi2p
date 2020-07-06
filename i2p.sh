@@ -15,4 +15,3 @@ while read /tmp/mxppi2p/server.b32.i2p.txt ; do echo $ser
 sed s/xxx.b32.i2p/$ser/g  cat >> /etc/prosody/prosody.cfg.lua 
 sed s/xxx.b32.i2p/$ser/g  cat >> /tmp/mxppi2p/certs.b32.i2p.sh
 bash /tmp/mxppi2p/certs.b32.i2p.sh
-service prosody restart
