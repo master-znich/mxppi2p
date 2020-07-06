@@ -1,11 +1,8 @@
 #!bin/bash
-
-
+sudo apt-get install apt-transport-https lua-bit32 prosody  -y
 wget -q -O - https://repo.i2pd.xyz/.help/add_repo
 sudo apt-get update
-echo install i2p
-sudo apt-get update
-sudo apt-get install apt-transport-https lua-bit32 prosody i2p -y
+echo install i2pd
 sudo bash -c "cat /tmp/mxppi2p/i2p.conf > /var/lib/i2pd/tunnels.conf "
 sudo service i2pd restart
 wget -P /usr/lib/prosody/modules https://raw.githubusercontent.com/majestrate/mod_darknet/master/mod_darknet.lua
